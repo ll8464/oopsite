@@ -11,10 +11,10 @@
 
 /*variables*/
 :root {
-  --container-color: #1a1e21;
-  --second-color: #fd8f44;
+  --container-color: #b8dbd9;
+  --second-color: #586f7c;
   --text-color: #172317;
-  --bg-color: #fff;
+  --bg-color: #f4f4f9;
 }
 ::selection {
   color: var(--bg-color);
@@ -80,7 +80,7 @@ header.shadow .logo {
 }
 
 .login:hover {
-  background: hsl(24, 98%, 58%);
+  background: #3d464c;
   transition: 0.3s;
 }
 

@@ -8,3 +8,5 @@ Common Software development Interview questions.
 Data Structures
 
 Images from unsplash.
+
+Color Palette chosen from coolors.co
