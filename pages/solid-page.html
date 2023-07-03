@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <title>OOPS</title>
+  </head>
+  <body>
+    <header>
+      <!--Nav-->
+      <div class="nav container">
+        <!-- Logo-->
+        <a href="#" class="logo">Lacey <span>Codes</span></a>
+        <!--<a href="#" class="login">Login</a>-->
+      </div>
+    </header>
+
+    <section class="post-header">
+      <div class="header-content post-container">
+        <a href="../index.html" class="back-home"> Back To Home </a>
+        <h1 class="header-title">SOLID Design</h1>
+        <img
+          src="../assets/images/funSign.jpg"
+          alt="Neon Sign Says Fun"
+          class="header-img" />
+      </div>
+    </section>
+
+    <section class="post-content post-container">
+      <h2 class="sub-heading">SOLID Design</h2>
+      <p class="post-text">
+        In order to make flexible, scalable, and efficient code, it is
+        recommended to follow the SOLID design principles. SOLID is an acronym
+        for 5 principles: Single Responsibility, Open Closed, Liskow
+        Subsitution, Interface Segregation, and Dependency Inversion.
+      </p>
+
+      <h2 class="sub-heading">Single Responsiblity Principle</h2>
+      <p class="post-text">
+        Single Responsiblity Principle states that a class should only have one
+        responsibility. This does not mean it should only have one method,
+        rather, it's focus should be singular. For example, the Math class only
+        contains math functions and not string manipulation.
+      </p>
+
+      <h2 class="sub-heading">Open Closed Principle</h2>
+      <p class="post-text">
+        Open Closed Principle states that a class should be open for
+        implemenation but closed for manipulation. A class should be accessible
+        as needed, however, it should not be changed. When new functionality is
+        needed, a new class should be created instead of adding or changing to
+        an existing one. This prevents breaking production code, and keeps the
+        code base modular. It also aids in debugging since if there are bugs,
+        you know the issue is in the new class instead of in the entire one
+        class code base.
+      </p>
+      <h2 class="sub-heading">Liskow Substitution</h2>
+      <p class="post-text">
+        Liskow Substitution states that a subtype should be perfectly
+        exchangable with its parent type. In order words, a child class should
+        be able to used in place of a parent class without causing new
+        exceptions. An effect of designing this way means that a client does not
+        need to know the subtype it is invoking.
+      </p>
+      <h2 class="sub-heading">Interface Segregation</h2>
+      <p class="post-text">
+        Code should not depend on/implement methods it does not use. Instead of
+        one giant interface that force clients to have numberous unrelated
+        methods, it is better to have smaller specialized interfaces. This
+        ensures that the client only have methods that are of interest to them
+        which reduces bugs and spaghetti code.
+      </p>
+      <h2 class="sub-heading">Dependency Inversion</h2>
+      <p class="post-text">
+        Dependency Inversion states that a higher level module should not
+        directly depend on a lower level module. For example, in a UX ->
+        Business Layer -> Data Layer system, the Data layer should not depend on
+        a user clicking a button to access the database. Instead, interfaces
+        should be implemented so each module is decoupled from one another. This
+        allows the code to be reused and entire modules to be swapped out as
+        needed.
+      </p>
+    </section>
+    <div class="share post-container">
+      <span class="share-title">Share this article</span>
+      <div class="social">
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+      </div>
+    </div>
+
+    <div class="footer container">
+      <p>By Lee Lacey</p>
+      <div class="social">
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
