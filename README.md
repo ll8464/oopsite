@@ -9,4 +9,6 @@ Data Structures
 
 Images from unsplash.
 
+Add code examples.
+
 Color Palette chosen from coolors.co
