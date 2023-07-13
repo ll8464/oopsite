@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <title>OOPS</title>
+  </head>
+  <body>
+    <header>
+      <!--Nav-->
+      <div class="nav container">
+        <!-- Logo-->
+        <a href="#" class="logo">Lacey <span>Codes</span></a>
+        <!--<a href="#" class="login">Login</a>-->
+      </div>
+    </header>
+
+    <section class="post-header">
+      <div class="header-content post-container">
+        <a href="../index.html" class="back-home"> Back To Home </a>
+        <h1 class="header-title">Adventures in C#!</h1>
+        <img
+          src="../assets/images/court.jpg"
+          alt="Wooden Structure"
+          class="header-img" />
+      </div>
+    </section>
+
+    <section class="post-content post-container">
+      <h2 class="sub-heading">IEnumerable</h2>
+      <p class="post-text">
+        IEnumerable allows types to be iterable. Every data structure that can
+        be iterated through implements the IEnumerable interface. When creating
+        your own types, you must implement both the IEnumerable and IEnumerator
+        interfaces if you wish to utilize iterable methods (or use foreach).
+      </p>
+      <p class="post-text">
+        Before we get into the details about implementation, let's answer an
+        important question: "Why use the IEnumerable interface at all?". It is
+        recommended to use the IEnumerable interface when you don’t want to copy
+        a massive amount of data into memory like in the case of a large
+        database. It is not recommended to use IEnumerable when you need results
+        quickly and if you are editing or changing the objects later on. Then it
+        is better to use an Array/List or other data structure.
+      </p>
+
+      <p class="post-text">
+        <h2>Generic IEnumerable &lt;T&gt;  vs. Non-Generic IEnumerable</h2>
+        Generic in this context means "relating to a class or group of things". Thus, non-generic means any type is allowed, while generic means only a specific type is allowed. 
+        Non-Generic IEnumerable is not strongly typed and store elements as objects. Generic IEnumerable &lt;T&gt; is strongly typed and store elements as a collection/array of the chosen type.  Both allows you to iterate through their respective collection using GetEnumerator(). In general, it is better to use generic IEnumerable &lt;T&gt; if you know what type of data that will be returned. 
+      </p>
+      <p class="post-text">
+        <h2>IEnumerable &lt;T&gt; Generic </h2>
+        Generic IEnumerable &lt;T&gt; implements both Non-Generic IEnumerable and IDisposable interfaces. The reason why it is preferred to to use generic IEnumerable  is because it is faster when going through large datasets. This is due to its implementation of the Dispose method from IDisposable, which will free resources at each iteration. After 100,000+ iterations in a dataset, even the most modern processors will be noticably slower if IDisposable is not used. 
+      </p>
+      
+    </section>
+    <div class="share post-container">
+      <span class="share-title">Share this article</span>
+      <div class="social">
+        <a href="https://github.com/ll8464"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/lee-lacey1/"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+      </div>
+    </div>
+
+    <div class="footer container">
+      <p>By Lee Lacey</p>
+      <div class="social">
+        <a href="https://github.com/ll8464"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/lee-lacey1/"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
